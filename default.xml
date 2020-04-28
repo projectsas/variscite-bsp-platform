@@ -6,19 +6,28 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5"      name="QT5"/>
+  <remote fetch="https://github.com/OSSystems"     name="OSSystems"/>
+  <remote fetch="https://github.com/sbabic"        name="sbabic"/>
+  <remote fetch="https://github.com/varigit"       name="variscite"/>
 
   <project remote="yocto" revision="zeus" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="zeus" name="meta-freescale" path="sources/meta-freescale"/>
 
   <project remote="oe" revision="zeus" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="zeus" name="fsl-community-bsp-base" path="sources/base">
-	<linkfile dest="README" src="README"/>
-	<linkfile dest="setup-environment" src="setup-environment"/>
-  </project>
-
   <project remote="freescale" revision="zeus" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
   <project remote="freescale" revision="zeus" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
-  <project remote="freescale" revision="zeus" name="Documentation" path="sources/Documentation"/>
+
+	<project remote="QT5"       revision="zeus"   name="meta-qt5"                path="sources/meta-qt5"/>
+	<project remote="OSSystems" revision="zeus"   name="meta-browser"            path="sources/meta-browser"/>
+	<project remote="sbabic"    revision="zeus"   name="meta-swupdate"           path="sources/meta-swupdate"/>
+	<project remote="yocto"     revision="zeus"   name="meta-virtualization"     path="sources/meta-virtualization"/>
+	<project remote="variscite" revision="thud"   name="meta-variscite-fslc"     path="sources/meta-variscite-fslc"/>
+
+	<project remote="variscite" revision="thud" name="variscite-bsp-base" path="sources/base">
+		<copyfile dest="README" src="README"/>
+		<copyfile dest="setup-environment" src="setup-environment"/>
+	</project>
 
 </manifest>
