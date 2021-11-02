@@ -16,8 +16,8 @@
   <project remote="oe"        revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb" upstream="hardknott"   name="meta-python2"            path="sources/meta-python2"/>
 
   <project remote="variscite" revision="503ea10069e5d1e40660c48adc3807db3e8ef06d" name="variscite-bsp-base" path="sources/base">
-	<linkfile dest="README" src="README"/>
-	<linkfile dest="setup-environment" src="setup-environment"/>
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
   <project remote="freescale" revision="7f23af99cb97a12134a46b5b9d497f05b758bf0c" upstream="hardknott"   name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
